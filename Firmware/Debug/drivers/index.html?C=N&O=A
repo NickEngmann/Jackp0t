@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="Author" content="The Dark Tangent" />
+<meta name="Description" content="Started in 1992 by the Dark Tangent, DEF CON is the world's longest running and largest underground hacking conference. Hackers, corporate IT professionals, and three letter government agencies all converge on Las Vegas every summer to absorb cutting edge hacking research from the most brilliant minds in the world and test their skills in contests of hacking might." />
+<meta name="copyright" content="All content copyright DEF CON Communications, Inc. for non-commercial educational purposes only." />
+<meta name="Keywords" content="defcon, DEF CON, free hacking tutorials, computer hacking, hardware hacking, download free hacking tools, free hacking program, hacking software, largest underground hacker convention, hacking security conference, hacking forum, defcon forum, pen-testing, penetration testing, hacker gathering, the dark tangent, lockpicking, hacker news, hacker community, goons, computer exploits, zero day vulnerabilities, 0day, robotics, hacker attack, defend against hackers, computer hacker" />
+
+<title>DEF CON Media Server</title>
+<link rel="alternate" type="application/rss+xml" title="DEF CON RSS News" href="https://www.defcon.org/defconrss.xml" />
+<link rel="shortcut icon" href="/media.defcon.org-css/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/media.defcon.org-css/media-styles.css"/>
+
+</head>
+<body><a name="top"></a> 
+<div id="header" class="container">
+<a class="homeLink" href="/">&nbsp;&nbsp;&nbsp;&lt; media home</a> 
+<a href="http://m6rqq6kocsyugo2laitup5nn32bwm3lh677chuodjfmggczoafzwfcad.onion/"> | Our .onion</a>
+<a href="https://www.defcon.org/"><img class="mastHead" src="/media.defcon.org-images/defcon-main/dc-logo.png" alt="DEF CON Logo" height="66" width="320"></a>
+</div>
+<div id="wrapper" class="container">
+<!-- *********** PAGENAV BEGIN ************ -->
+<div id="pageNavCenterT" >
+<h1>DEF CON Media Server</h1>
+</div>
+<!-- *********** PAGENAV END ************ -->
+<div id="content"> <!--  --> 
+<h1 class="breadcrumb">
+/DEF CON 27/DEF CON 27 badge/Firmware/Debug/drivers/</h1>
+<table id="list"><thead><tr><th style="width:55%"><a href="?C=N&O=A">File Name</a>&nbsp;<a href="?C=N&O=D">&nbsp;&darr;&nbsp;</a></th><th style="width:20%"><a href="?C=S&O=A">File Size</a>&nbsp;<a href="?C=S&O=D">&nbsp;&darr;&nbsp;</a></th><th style="width:25%"><a href="?C=M&O=A">Date</a>&nbsp;<a href="?C=M&O=D">&nbsp;&darr;&nbsp;</a></th></tr></thead>
+<tbody><tr><td class="link"><a href="../">Parent directory/</a></td><td class="size">-</td><td class="date">-</td></tr><tr><td class="link"><a href="fsl_clock.d" title="fsl_clock.d">fsl_clock.d</a></td><td class="size">633 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_clock.o" title="fsl_clock.o">fsl_clock.o</a></td><td class="size">304.2 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_common.d" title="fsl_common.d">fsl_common.d</a></td><td class="size">636 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_common.o" title="fsl_common.o">fsl_common.o</a></td><td class="size">283.1 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_cop.d" title="fsl_cop.d">fsl_cop.d</a></td><td class="size">677 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_cop.o" title="fsl_cop.o">fsl_cop.o</a></td><td class="size">285.9 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_crc.d" title="fsl_crc.d">fsl_crc.d</a></td><td class="size">677 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_crc.o" title="fsl_crc.o">fsl_crc.o</a></td><td class="size">290.7 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_flexio.d" title="fsl_flexio.d">fsl_flexio.d</a></td><td class="size">692 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_flexio.o" title="fsl_flexio.o">fsl_flexio.o</a></td><td class="size">306.3 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_cache.d" title="fsl_ftfx_cache.d">fsl_ftfx_cache.d</a></td><td class="size">988 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_cache.o" title="fsl_ftfx_cache.o">fsl_ftfx_cache.o</a></td><td class="size">298.8 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_controller.d" title="fsl_ftfx_controller.d">fsl_ftfx_controller.d</a></td><td class="size">943 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_controller.o" title="fsl_ftfx_controller.o">fsl_ftfx_controller.o</a></td><td class="size">323.7 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_flash.d" title="fsl_ftfx_flash.d">fsl_ftfx_flash.d</a></td><td class="size">988 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_flash.o" title="fsl_ftfx_flash.o">fsl_ftfx_flash.o</a></td><td class="size">323.8 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_flexnvm.d" title="fsl_ftfx_flexnvm.d">fsl_ftfx_flexnvm.d</a></td><td class="size">998 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_ftfx_flexnvm.o" title="fsl_ftfx_flexnvm.o">fsl_ftfx_flexnvm.o</a></td><td class="size">288.7 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_gpio.d" title="fsl_gpio.d">fsl_gpio.d</a></td><td class="size">682 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_gpio.o" title="fsl_gpio.o">fsl_gpio.o</a></td><td class="size">293.1 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_i2c.d" title="fsl_i2c.d">fsl_i2c.d</a></td><td class="size">677 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_i2c.o" title="fsl_i2c.o">fsl_i2c.o</a></td><td class="size">342.4 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_lptmr.d" title="fsl_lptmr.d">fsl_lptmr.d</a></td><td class="size">687 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_lptmr.o" title="fsl_lptmr.o">fsl_lptmr.o</a></td><td class="size">287.9 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_lpuart.d" title="fsl_lpuart.d">fsl_lpuart.d</a></td><td class="size">692 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_lpuart.o" title="fsl_lpuart.o">fsl_lpuart.o</a></td><td class="size">329.1 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_pit.d" title="fsl_pit.d">fsl_pit.d</a></td><td class="size">677 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_pit.o" title="fsl_pit.o">fsl_pit.o</a></td><td class="size">286.4 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_smc.d" title="fsl_smc.d">fsl_smc.d</a></td><td class="size">1.1 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_smc.o" title="fsl_smc.o">fsl_smc.o</a></td><td class="size">302.8 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_tpm.d" title="fsl_tpm.d">fsl_tpm.d</a></td><td class="size">677 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_tpm.o" title="fsl_tpm.o">fsl_tpm.o</a></td><td class="size">303.7 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_uart.d" title="fsl_uart.d">fsl_uart.d</a></td><td class="size">682 B</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="fsl_uart.o" title="fsl_uart.o">fsl_uart.o</a></td><td class="size">327.5 KiB</td><td class="date">2019-Jun-29 05:24</td></tr>
+<tr><td class="link"><a href="subdir.mk" title="subdir.mk">subdir.mk</a></td><td class="size">2.4 KiB</td><td class="date">2019-Jul-12 20:35</td></tr>
+</tbody></table></div>
+</div>
+<div id="footer" class="container">&copy; 1992-2019 DEF CON Communications, Inc. 
+<a href="/" title="DEF CON Web Site">Home</a>
+| <a href="/html/links/dc-privacy.html" title="DEF CON Privacy Policy">Privacy Policy</a>
+| <a href="/defconrss.xml" title="DEF CON RSS">RSS Feed</a>
+| <a href="https://forum.defcon.org/" title="DEF CON Forums">DEF CON Forums</a>
+</div>
+<!-- *********** Scripts Go Here ************ --> 
+<!-- *********** End Scripts *********** --> 
+</body>
+</html>

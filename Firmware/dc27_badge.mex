@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="" version="1.4" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4.xsd" uuid="884fcdb5-2250-45ab-994c-2340aea5c205" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MKL27Z64xxx4</processor>
+      <package>MKL27Z64VDA4</package>
+      <board></board>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="core0">
+         <core name="Cortex-M0P" id="core0" description="M0P core"/>
+      </cores>
+      <description>Configuration imported from dc27_badge</description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>true</generate_extended_information>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="4.1" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>4.0.1</processor_version>
+            <pin_labels>
+               <pin_label pin_num="B4" pin_signal="CMP0_IN0/PTC6/LLWU_P10/SPI0_MOSI/EXTRG_IN/SPI0_MISO" label="LED_nINT" identifier="LED_nINT"/>
+               <pin_label pin_num="C1" pin_signal="ADC0_DM1/ADC0_SE5a/PTE17/SPI0_SCK/UART2_RX/TPM_CLKIN1/LPTMR0_ALT3/FXIO0_D1" label="PTE17" identifier="PTE17"/>
+               <pin_label pin_num="A5" pin_signal="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/CMP0_OUT" label="LED_EN" identifier="LED_EN"/>
+               <pin_label pin_num="C6" pin_signal="ADC0_SE9/PTB1/I2C0_SDA/TPM1_CH1/SPI1_MISO/SPI1_MOSI" label="SDA" identifier="SDA"/>
+               <pin_label pin_num="D6" pin_signal="ADC0_SE8/PTB0/LLWU_P5/I2C0_SCL/TPM1_CH0/SPI1_MOSI/SPI1_MISO" label="SCL" identifier="SCL"/>
+               <pin_label pin_num="A2" pin_signal="PTD7/SPI1_MISO/LPUART0_TX/I2C1_SCL/SPI1_MOSI/FXIO0_D7" label="PTD7" identifier="PTD7"/>
+               <pin_label pin_num="B2" pin_signal="ADC0_SE7b/PTD6/LLWU_P15/SPI1_MOSI/LPUART0_RX/I2C1_SDA/SPI1_MISO/FXIO0_D6" label="PTD6" identifier="PTD6"/>
+               <pin_label pin_num="B3" pin_signal="ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5/FXIO0_D5" label="PTD5" identifier="PTD5"/>
+               <pin_label pin_num="A6" pin_signal="PTC4/LLWU_P8/SPI0_PCS0/LPUART1_TX/TPM0_CH3/SPI1_PCS0" label="NXH_nRESET" identifier="NXH_nRESET"/>
+               <pin_label pin_num="C2" pin_signal="ADC0_DP1/ADC0_SE1/PTE16/SPI0_PCS0/UART2_TX/TPM_CLKIN0/FXIO0_D0" label="PTE16" identifier="PTE16"/>
+               <pin_label pin_num="D1" pin_signal="ADC0_DP2/ADC0_SE2/PTE18/SPI0_MOSI/I2C0_SDA/SPI0_MISO/FXIO0_D2" label="PTE18" identifier="PTE18"/>
+               <pin_label pin_num="E3" pin_signal="ADC0_DP0/ADC0_SE0/PTE20/TPM1_CH0/LPUART0_TX/FXIO0_D4" label="PTE20" identifier="PTE20"/>
+               <pin_label pin_num="E1" pin_signal="ADC0_DP3/ADC0_SE3/PTE22/TPM2_CH0/UART2_TX/FXIO0_D6" label="KL_TX" identifier="KL_TX"/>
+               <pin_label pin_num="F1" pin_signal="ADC0_DM3/ADC0_SE7a/PTE23/TPM2_CH1/UART2_RX/FXIO0_D7" label="KL_RX" identifier="KL_RX"/>
+               <pin_label pin_num="E2" pin_signal="ADC0_DM0/ADC0_SE4a/PTE21/TPM1_CH1/LPUART0_RX/FXIO0_D5" label="PTE21" identifier="PTE21"/>
+               <pin_label pin_num="F2" pin_signal="ADC0_SE23/CMP0_IN4/VREF_OUT/PTE30/TPM0_CH3/TPM_CLKIN1/LPUART1_TX/LPTMR0_ALT1" label="VREF_OUT" identifier="VREF_OUT"/>
+               <pin_label pin_num="B5" pin_signal="PTC3/LLWU_P7/SPI1_SCK/LPUART1_RX/TPM0_CH2/CLKOUT" label="NXH_REFCLK" identifier="NXH_REFCLK"/>
+               <pin_label pin_num="F4" pin_signal="PTA1/LPUART0_RX/TPM2_CH0" label="NXH_RX" identifier="NXH_RX"/>
+               <pin_label pin_num="E4" pin_signal="PTA2/LPUART0_TX/TPM2_CH1" label="NXH_TX" identifier="NXH_TX"/>
+               <pin_label pin_num="A4" pin_signal="CMP0_IN1/PTC7/SPI0_MISO/USB_SOF_OUT/SPI0_MOSI" label="NXH_DETECT" identifier="NXH_DETECT"/>
+               <pin_label pin_num="B6" pin_signal="ADC0_SE11/PTC2/I2C1_SDA/TPM0_CH1" label="NXH_CAL" identifier="NXH_CAL"/>
+               <pin_label pin_num="C5" pin_signal="ADC0_SE15/PTC1/LLWU_P6/RTC_CLKIN/I2C1_SCL/TPM0_CH0" label="NXH_UPDATE" identifier="NXH_UPDATE"/>
+               <pin_label pin_num="A3" pin_signal="PTD4/LLWU_P14/SPI1_PCS0/UART2_RX/TPM0_CH4/FXIO0_D4" label="KL_PIEZO" identifier="KL_PIEZO"/>
+               <pin_label pin_num="F5" pin_signal="PTA4/I2C1_SDA/TPM0_CH1/NMI_b" label="BOOTCFG0" identifier="BOOTCFG0"/>
+               <pin_label pin_num="D5" pin_signal="PTA20/RESET_b" label="KL_nRESET" identifier="KL_nRESET"/>
+               <pin_label pin_num="E5" pin_signal="PTA3/I2C1_SCL/TPM0_CH0/SWD_DIO" label="KL_SWDIO" identifier="KL_SWDIO"/>
+               <pin_label pin_num="F3" pin_signal="PTA0/TPM0_CH5/SWD_CLK" label="KL_SWCLK" identifier="KL_SWCLK"/>
+            </pin_labels>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>core0</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="n/a" description="Peripheral n/a is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="I2C0" description="Peripheral I2C0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="UART2" description="Peripheral UART2 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="SIM" description="Peripheral SIM is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="LPUART0" description="Peripheral LPUART0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="GPIOC" description="Peripheral GPIOC is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="TPM0" description="Peripheral TPM0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="SUPPLY" description="Peripheral SUPPLY is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="RCM" description="Peripheral RCM is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="SWD" description="Peripheral SWD is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="OSC0" description="Peripheral OSC0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.port" description="Pins initialization requires the PORT Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.gpio" description="Pins initialization requires the GPIO Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="n/a" signal="disabled" pin_num="A1" pin_signal="PTE0/CLKOUT32K/SPI1_MISO/LPUART1_TX/RTC_CLKOUT/CMP0_OUT/I2C1_SDA">
+                     <pin_features>
+                        <pin_feature name="pull_select" value="up"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 6" pin_num="B4" pin_signal="CMP0_IN0/PTC6/LLWU_P10/SPI0_MOSI/EXTRG_IN/SPI0_MISO">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                        <pin_feature name="pull_select" value="up"/>
+                        <pin_feature name="pull_enable" value="disable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="I2C0" signal="SCL" pin_num="D6" pin_signal="ADC0_SE8/PTB0/LLWU_P5/I2C0_SCL/TPM1_CH0/SPI1_MOSI/SPI1_MISO"/>
+                  <pin peripheral="I2C0" signal="SDA" pin_num="C6" pin_signal="ADC0_SE9/PTB1/I2C0_SDA/TPM1_CH1/SPI1_MISO/SPI1_MOSI"/>
+                  <pin peripheral="GPIOC" signal="GPIO, 5" pin_num="A5" pin_signal="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/CMP0_OUT">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="n/a" signal="disabled" pin_num="A2" pin_signal="PTD7/SPI1_MISO/LPUART0_TX/I2C1_SCL/SPI1_MOSI/FXIO0_D7"/>
+                  <pin peripheral="GPIOC" signal="GPIO, 4" pin_num="A6" pin_signal="PTC4/LLWU_P8/SPI0_PCS0/LPUART1_TX/TPM0_CH3/SPI1_PCS0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                        <pin_feature name="gpio_init_state" value="false"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="UART2" signal="TX" pin_num="E1" pin_signal="ADC0_DP3/ADC0_SE3/PTE22/TPM2_CH0/UART2_TX/FXIO0_D6"/>
+                  <pin peripheral="UART2" signal="RX" pin_num="F1" pin_signal="ADC0_DM3/ADC0_SE7a/PTE23/TPM2_CH1/UART2_RX/FXIO0_D7"/>
+                  <pin peripheral="SIM" signal="CLKOUT" pin_num="B5" pin_signal="PTC3/LLWU_P7/SPI1_SCK/LPUART1_RX/TPM0_CH2/CLKOUT"/>
+                  <pin peripheral="LPUART0" signal="RX" pin_num="F4" pin_signal="PTA1/LPUART0_RX/TPM2_CH0"/>
+                  <pin peripheral="LPUART0" signal="TX" pin_num="E4" pin_signal="PTA2/LPUART0_TX/TPM2_CH1"/>
+                  <pin peripheral="GPIOC" signal="GPIO, 7" pin_num="A4" pin_signal="CMP0_IN1/PTC7/SPI0_MISO/USB_SOF_OUT/SPI0_MOSI">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                        <pin_feature name="gpio_interrupt" value="kPORT_InterruptRisingEdge"/>
+                        <pin_feature name="pull_select" value="down"/>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 2" pin_num="B6" pin_signal="ADC0_SE11/PTC2/I2C1_SDA/TPM0_CH1">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 1" pin_num="C5" pin_signal="ADC0_SE15/PTC1/LLWU_P6/RTC_CLKIN/I2C1_SCL/TPM0_CH0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="n/a" signal="disabled" pin_num="F5" pin_signal="PTA4/I2C1_SDA/TPM0_CH1/NMI_b"/>
+                  <pin peripheral="TPM0" signal="CH, 4" pin_num="A3" pin_signal="PTD4/LLWU_P14/SPI1_PCS0/UART2_RX/TPM0_CH4/FXIO0_D4">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SUPPLY" signal="VSS, 0" pin_num="C4" pin_signal="VSS4"/>
+                  <pin peripheral="RCM" signal="RESET" pin_num="D5" pin_signal="PTA20/RESET_b"/>
+                  <pin peripheral="SWD" signal="DIO" pin_num="E5" pin_signal="PTA3/I2C1_SCL/TPM0_CH0/SWD_DIO"/>
+                  <pin peripheral="OSC0" signal="XTAL0" pin_num="E6" pin_signal="XTAL0/PTA19/LPUART1_TX/TPM_CLKIN1/LPTMR0_ALT1"/>
+                  <pin peripheral="OSC0" signal="EXTAL0" pin_num="F6" pin_signal="EXTAL0/PTA18/LPUART1_RX/TPM_CLKIN0"/>
+                  <pin peripheral="SWD" signal="CLK" pin_num="F3" pin_signal="PTA0/TPM0_CH5/SWD_CLK"/>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <clocks name="Clocks" version="4.1" enabled="true" update_project_code="true">
+         <clocks_profile>
+            <processor_version>4.0.1</processor_version>
+         </clocks_profile>
+         <clock_configurations>
+            <clock_configuration name="BOARD_BootClockRUN">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="PinSignal" resourceId="OSC0.EXTAL0" description="&apos;EXTAL0&apos; (Pins tool id: OSC0.EXTAL0, Clocks tool id: OSC.EXTAL0) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PinSignal" resourceId="OSC0.XTAL0" description="&apos;XTAL0&apos; (Pins tool id: OSC0.XTAL0, Clocks tool id: OSC.XTAL0) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <clock_sources>
+                  <clock_source id="OSC.OSC.outFreq" value="32.768 kHz" locked="false" enabled="true"/>
+               </clock_sources>
+               <clock_outputs>
+                  <clock_output id="Bus_clock.outFreq" value="4 MHz" locked="true" accuracy="0.001"/>
+                  <clock_output id="CLKOUT.outFreq" value="32.768 kHz" locked="true" accuracy="0.00001"/>
+                  <clock_output id="Core_clock.outFreq" value="8 MHz" locked="false" accuracy=""/>
+                  <clock_output id="ERCLK32K.outFreq" value="32.768 kHz" locked="true" accuracy="0.001"/>
+                  <clock_output id="Flash_clock.outFreq" value="4 MHz" locked="false" accuracy=""/>
+                  <clock_output id="LPO_clock.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="LPUART0CLK.outFreq" value="8 MHz" locked="false" accuracy=""/>
+                  <clock_output id="MCGIRCLK.outFreq" value="8 MHz" locked="false" accuracy=""/>
+                  <clock_output id="OSCERCLK.outFreq" value="32.768 kHz" locked="true" accuracy="0.00001"/>
+                  <clock_output id="System_clock.outFreq" value="8 MHz" locked="false" accuracy=""/>
+                  <clock_output id="TPMCLK.outFreq" value="8 MHz" locked="false" accuracy=""/>
+               </clock_outputs>
+               <clock_settings>
+                  <setting id="CLKOUTConfig" value="yes" locked="false"/>
+                  <setting id="LPUART0ClkConfig" value="yes" locked="false"/>
+                  <setting id="MCG.LIRCDIV2.scale" value="1" locked="true"/>
+                  <setting id="MCG_C2_OSC_MODE_CFG" value="ModeOscLowPower" locked="false"/>
+                  <setting id="OSC0_CR_ERCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="OSC_CR_ERCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="OSC_CR_SYS_OSC_CAP_LOAD_CFG" value="SC12PF" locked="false"/>
+                  <setting id="SIM.CLKOUTSEL.sel" value="OSC.OSCERCLK" locked="false"/>
+                  <setting id="SIM.LPUART0SRCSEL.sel" value="MCG.MCGIRCLK" locked="false"/>
+                  <setting id="SIM.TPMSRCSEL.sel" value="MCG.MCGIRCLK" locked="false"/>
+                  <setting id="TPMClkConfig" value="yes" locked="false"/>
+               </clock_settings>
+               <called_from_default_init>true</called_from_default_init>
+            </clock_configuration>
+         </clock_configurations>
+      </clocks>
+      <periphs name="Peripherals" version="4.1" enabled="true" update_project_code="true">
+         <dependencies>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.uart" description="UART Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.uart" description="Unsupported version of the UART Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.1.5</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpuart" description="LPUART Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lpuart" description="Unsupported version of the LPUART Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.2.4</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.i2c" description="I2C Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.i2c" description="Unsupported version of the I2C Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.0.5</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.gpio" description="GPIO Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.gpio" description="Unsupported version of the GPIO Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.2.1</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.tpm" description="TPM Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.tpm" description="Unsupported version of the TPM Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.0.2</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lptmr" description="LPTMR Driver not found in the toolchain/IDE project." problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.drivers.lptmr" description="Unsupported version of the LPTMR Driver in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="compatible">
+                  <data type="Version">2.0.1</data>
+               </feature>
+            </dependency>
+         </dependencies>
+         <peripherals_profile>
+            <processor_version>4.0.1</processor_version>
+         </peripherals_profile>
+         <functional_groups>
+            <functional_group name="BOARD_InitPeripherals" uuid="5ab5ee17-89a0-420e-824e-281d872afd11" called_from_default_init="true" id_prefix="" core="core0">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="ClockOutput" resourceId="Bus_clock" description="Bus clock is inactive." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="UART2.uart_tx" description="Signal TX of the peripheral UART2 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="UART2.uart_rx" description="Signal RX of the peripheral UART2 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="LPUART0CLK" description="LPUART0 clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="LPUART0.uart_tx" description="Signal TX of the peripheral LPUART0 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="LPUART0.uart_rx" description="Signal RX of the peripheral LPUART0 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="I2C0.i2c_scl" description="Signal serial clock of the peripheral I2C0 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="I2C0.i2c_sda" description="Signal serial data of the peripheral I2C0 is not routed." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="System_clock" description="System clock is inactive." problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="TPMCLK" description="TPM clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PeripheralUnifiedSignal" resourceId="TPM0.tmr_ch.4" description="Signal CH4 of peripheral TPM0 is not routed" problem_level="1" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="routed" evaluation="equal">
+                        <data type="Boolean">true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="ClockOutput" resourceId="LPO_clock" description="LPO clock is inactive." problem_level="2" source="Peripherals:BOARD_InitPeripherals">
+                     <feature name="frequency" evaluation="greaterThan">
+                        <data type="Frequency" unit="Hz">0</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <instances>
+                  <instance name="UART2" type="uart" type_id="uart_cd31a12aa8c79051fda42cc851a27c37" mode="polling" peripheral="UART2" enabled="true">
+                     <config_set name="uartConfig_t">
+                        <struct name="uartConfig">
+                           <setting name="clockSource" value="BusInterfaceClock"/>
+                           <setting name="clockSourceFreq" value="GetFreq"/>
+                           <setting name="baudRate_Bps" value="115200"/>
+                           <setting name="parityMode" value="kUART_ParityDisabled"/>
+                           <setting name="idleType" value="kUART_IdleTypeStartBit"/>
+                           <setting name="enableTx" value="true"/>
+                           <setting name="enableRx" value="true"/>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="LPUART0" type="lpuart" type_id="lpuart_bebe3e12b6ec22bbd14199038f2bf459" mode="interrupts" peripheral="LPUART0" enabled="true">
+                     <config_set name="lpuartConfig_t">
+                        <struct name="lpuartConfig">
+                           <setting name="clockSource" value="LpuartClock"/>
+                           <setting name="lpuartSrcClkFreq" value="BOARD_BootClockRUN"/>
+                           <setting name="baudRate_Bps" value="117728"/>
+                           <setting name="parityMode" value="kLPUART_ParityDisabled"/>
+                           <setting name="dataBitsCount" value="kLPUART_EightDataBits"/>
+                           <setting name="isMsb" value="false"/>
+                           <setting name="stopBitCount" value="kLPUART_OneStopBit"/>
+                           <setting name="rxIdleType" value="kLPUART_IdleTypeStartBit"/>
+                           <setting name="rxIdleConfig" value="kLPUART_IdleCharacter1"/>
+                           <setting name="enableTx" value="true"/>
+                           <setting name="enableRx" value="true"/>
+                        </struct>
+                     </config_set>
+                     <config_set name="interruptsCfg">
+                        <set name="interrupts">
+                           <selected>
+                              <id>kLPUART_RxDataRegFullInterruptEnable</id>
+                           </selected>
+                        </set>
+                        <struct name="interrupt_vectors">
+                           <setting name="enable_rx_tx_irq" value="true"/>
+                           <struct name="interrupt_rx_tx">
+                              <setting name="IRQn" value="LPUART0_IRQn"/>
+                              <setting name="enable_priority" value="true"/>
+                              <setting name="priority" value="0"/>
+                              <setting name="enable_custom_name" value="false"/>
+                           </struct>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="I2C0" type="i2c" type_id="i2c_2566d7363e7e9aaedabb432110e372d7" mode="I2C_Polling" peripheral="I2C0" enabled="true">
+                     <config_set name="fsl_i2c">
+                        <setting name="i2c_mode" value="kI2C_Master"/>
+                        <setting name="clockSource" value="BusInterfaceClock"/>
+                        <setting name="clockSourceFreq" value="GetFreq"/>
+                        <struct name="i2c_master_config">
+                           <setting name="enableMaster" value="true"/>
+                           <setting name="enableStopHold" value="true"/>
+                           <setting name="baudRate_Bps" value="50000"/>
+                           <setting name="glitchFilterWidth" value="0"/>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="GPIOC" type="gpio" type_id="gpio_f970a92e447fa4793838db25a2947ed7" mode="GPIO" peripheral="GPIOC" enabled="true">
+                     <config_set name="fsl_gpio">
+                        <setting name="enable_irq" value="true"/>
+                        <struct name="port_interrupt">
+                           <setting name="IRQn" value="PORTB_PORTC_PORTD_PORTE_IRQn"/>
+                           <setting name="enable_priority" value="false"/>
+                           <setting name="enable_custom_name" value="false"/>
+                        </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="TPM0" type="tpm" type_id="tpm_e7472ea12d53461b8d293488f3ed72ec" mode="EdgeAligned" peripheral="TPM0" enabled="true">
+                     <config_set name="tpm_main_config">
+                        <struct name="tpm_config">
+                           <setting name="clockSource" value="kTPM_SystemClock"/>
+                           <setting name="tpmSrcClkFreq" value="BOARD_BootClockRUN"/>
+                           <setting name="prescale" value="kTPM_Prescale_Divide_1"/>
+                           <setting name="timerFrequency" value="2600"/>
+                           <setting name="useGlobalTimeBase" value="false"/>
+                           <setting name="triggerSelect" value="kTPM_Trigger_Select_0"/>
+                           <setting name="triggerSource" value="kTPM_TriggerSource_Internal"/>
+                           <setting name="enableDoze" value="false"/>
+                           <setting name="enableDebugMode" value="false"/>
+                           <setting name="enableReloadOnTrigger" value="false"/>
+                           <setting name="enableStopOnOverflow" value="false"/>
+                           <setting name="enableStartOnTrigger" value="false"/>
+                           <setting name="enablePauseOnTrigger" value="false"/>
+                        </struct>
+                        <set name="timer_interrupts">
+                           <selected/>
+                        </set>
+                        <setting name="enable_irq" value="false"/>
+                        <struct name="tpm_interrupt">
+                           <setting name="IRQn" value="TPM0_IRQn"/>
+                           <setting name="enable_priority" value="false"/>
+                           <setting name="enable_custom_name" value="false"/>
+                        </struct>
+                        <setting name="EnableTimerInInit" value="false"/>
+                     </config_set>
+                     <config_set name="tpm_edge_aligned_mode">
+                        <array name="tpm_edge_aligned_channels_config">
+                           <struct name="0">
+                              <setting name="edge_aligned_mode" value="kTPM_EdgeAlignedPwm"/>
+                              <struct name="edge_aligned_pwm">
+                                 <setting name="chnlNumber" value="kTPM_Chnl_4"/>
+                                 <setting name="level" value="kTPM_HighTrue"/>
+                                 <setting name="dutyCyclePercent" value="50"/>
+                                 <setting name="enable_chan_irq" value="false"/>
+                              </struct>
+                           </struct>
+                        </array>
+                     </config_set>
+                  </instance>
+                  <instance name="LPTMR0" type="lptmr" type_id="lptmr_2eeab91a1a42f8238f9ac768f18c65ae" mode="LPTMR_GENERAL" peripheral="LPTMR0" enabled="true">
+                     <config_set name="fsl_lptmr">
+                        <setting name="enableInterrupt" value="true"/>
+                        <struct name="interrupt">
+                           <setting name="IRQn" value="LPTMR0_IRQn"/>
+                           <setting name="enable_priority" value="false"/>
+                           <setting name="enable_custom_name" value="false"/>
+                        </struct>
+                        <struct name="lptmr_config">
+                           <setting name="timerMode" value="kLPTMR_TimerModeTimeCounter"/>
+                           <setting name="pinSelect" value="ALT.3"/>
+                           <setting name="pinPolarity" value="kLPTMR_PinPolarityActiveHigh"/>
+                           <setting name="enableFreeRunning" value="false"/>
+                           <setting name="bypassPrescaler" value="true"/>
+                           <setting name="prescalerClockSource" value="kLPTMR_PrescalerClock_1"/>
+                           <setting name="clockSource" value="BOARD_BootClockRUN"/>
+                           <setting name="value" value="kLPTMR_Prescale_Glitch_0"/>
+                           <setting name="timerPeriod" value="5s"/>
+                        </struct>
+                     </config_set>
+                  </instance>
+               </instances>
+            </functional_group>
+         </functional_groups>
+         <components>
+            <component name="system" type_id="system_54b53072540eeeb8f8e9343e71f28176">
+               <config_set_global name="global_system_definitions"/>
+            </component>
+         </components>
+      </periphs>
+   </tools>
+</configuration>
