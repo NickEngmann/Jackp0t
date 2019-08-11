@@ -2,7 +2,9 @@
 Modifies your DEFCON27 Badge into a Jackp0t badge to force regular attendees to listen to a Rick Roll.
 
 Click the image below to watch the video.
-[![Watch the video](https://github.com/NickEngmann/imgs/Jackp0t.png)](https://youtu.be/2Dge06hO1Co)
+
+[<img src="./imgs/Jackp0t.png" data-canonical-src="./imgs/Jackp0t.png" width="400"/>](https://youtu.be/2Dge06hO1Co)
+
 
 Contributors:
 - [Halcy0nic](https://twitter.com/Halcy0nic)
@@ -33,6 +35,8 @@ That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" wi
 
 [How Did you Become a Village?](https://youtu.be/owiwTgvgGdE)
 
+[Quality Rick Roll](https://youtu.be/Qs6HjLnBc5k)
+
 ## Required Hardware
 
 - [DEFCON27 Badge](https://hackaday.com/2019/08/08/first-look-at-def-con-27-official-badge-kingpin-is-back/)
@@ -52,39 +56,73 @@ That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" wi
     - Powerful GNU Project Debugger. Used to interact with the Black Magic Probe to flash images
 
 ## Flashing
-Clone this repo, take the binary and load it into MCUXpresso
+We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect Cable](#lpc-link2-setup) and one using a [Black Magic Probe + Tag-Connect Cable](#black-magic-probe-setup). Depending on your available hardware/software please reference the appropriate section.
 
 ### LPC-Link2 Setup
+1. Install the MCUXpresso IDE on a Windows Machine
+2. Install the SDK by dragging and dropping the SDK Zip file into the MCUXpresso IDE
+--- TODO:: Picture of the SDK inside the MCUXpresso IDE
+3. Clone the Jackp0t repo
+    $ git clone https://github.com/NickEngmann/Jackp0t.git
+4. Copy the Jackp0t/dc27_badge folder into the MCUXpresso IDE
+--- TODO:: Add Image of IDE
+5. Attach the Tag-Connect Cable to the DEFCON27 Badge
+--- Add Image of Tag-Connect Touching DEFCON27 Badge
+6. Click on the Flash Button
+--- TODO:: Image of Flash Button
+
 
 ### Black Magic Probe Setup
-    $ (gdb) target extended-remote /dev/cu.usbmodem <some ##>
+0. [Download the jackp0t.bin binary](https://github.com/NickEngmann/Jackp0t/releases/download/0.9/jackp0t.bin)
+1. Install [GDB](https://www.gnu.org/software/gdb/download/)
+2. Plug in the Black Magic Probe into your computer
+3. [Update the firmware on the Black Magic Probe.](https://github.com/blacksphere/blackmagic/wiki/Upgrading-Firmware)
 
+    We ran into a lot if issues with the default firmware on the Black Magic Probe. But if you update the firmware using the master branch of the wikia flashing the device was far more consistent.
+
+4. Open up the arm toolchain
+
+    ```
+    $ arm-none-eabi-gdb
+    ```
+
+5. Connect to the Black Magic Probe Device
+    ```
+    $ (gdb) target extended-remote <device> 
+    ```
+    On OSX <device> is /dev/cu.usbmodem <some ##>
+
+    On Linux <device> is /dev/ttyUSB0
+
+6.  Use the monitor swdp_scan  command to connect to the device using the Serial-Wire Debug Protocol .
+    ```
     $ (gdb) monitor swdp scan
-
-Target voltage: 1.8V
-Available Targets:
-No. Att Driver
- 1      ARM Cortex-M
- 2      Kinetis Recovery (MDM-AP)
-
+    ```
+    Output:
+    ```
+        Target voltage: 1.8V
+        Available Targets:
+        No. Att Driver
+        1      KL27
+        2      Kinetis Recovery (MDM-AP)
+    ```
+7. Attach to the KL27 Microcontroller
+    ```
     $ (gdb) attach 1
+    ```
 
-Attaching to Remote target
-warning: while parsing target memory map (at line 1): Required element <memory> is missing
-0x00003f52 in ?? ()
+8. Allow GDB to allow access to memory outside of the devices known memory map. This is useful to allow access to memory mapped IO from GDB.
+    ```
     $ (gdb) set mem inaccessible-by-default off
-
-    $ (gdb) file dc27_badge-8-9-2019-0.axf || human.bin || dc27_badge.axf || dc27_badge.hex
-
-A program is being debugged already.
-Are you sure you want to change the file? (y or n) y
-Reading symbols from dc27_badge-8-9-2019-0.axf...done.
-
+    ```
+9. Set the binary file. Make sure the binary is in the current directory
+    ```
+    $ (gdb) file jackp0t.bin
+    ```
+10. Load the binary onto the board
+    ```
     $ (gdb) load
-
-Loading section .text, size 0xc954 lma 0x0
-Load failed
-
+    ```
 
 # Future Applications
 --- TODO::
