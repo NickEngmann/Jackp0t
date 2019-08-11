@@ -7,7 +7,7 @@ Click the image below to watch the video.
 
 Contributors:
 - [Halcy0nic](https://twitter.com/Halcy0nic)
-- [mlaertean](https://twitter.com/mlaertean)
+- [mlaerten](https://twitter.com/mlaerten)
 - [Nick Engmann](https://twitter.com/NickySlicksHaha)
 
 # Table of Contents
