@@ -1,7 +1,8 @@
 # Jackp0t
 Modifies your DEFCON27 Badge into a Jackp0t badge to force regular attendees to listen to a Rick Roll.
 
--- TODO: Video
+Click the image below to watch the video.
+[![Watch the video](https://github.com/NickEngmann/Jackp0t.png)](https://youtube.com/video)
 
 Contributors:
 - [Halcy0nic](https://twitter.com/Halcy0nic)
@@ -24,10 +25,11 @@ The DEFCON Badge's challenge this year involved an social interactions with an R
 
 1. Automatically complete the "find 10 different badge types" challenge
 2. Easily help our fellow nerds by unlocking their badges by having a badge that can act as a chamelion that can emulate all other badge types.
+3. Profit ???
 
 That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" win state on boot and over the course of a matter of seconds can emulate all the different badge types to unlock other attendees badges.
 
-[Check out our demo video]()
+[Check out our demo video](https://youtube.com/video)
 
 ## Required Hardware
 
