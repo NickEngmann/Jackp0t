@@ -79,5 +79,6 @@ Load failed
 - [Ross Schlaikjer](https://rhye.org/)
 - [The Kingpin, Joe Grand](https://twitter.com/joegrand)
 
-# Copyright
-TODO:::
+# License
+
+This project is [MIT licensed](./LICENSE.md).
