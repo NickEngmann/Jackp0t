@@ -5,7 +5,6 @@ Click the image below to watch the video.
 
 [<img src="./imgs/Jackp0t.png" data-canonical-src="./imgs/Jackp0t.png" width="400"/>](https://youtu.be/2Dge06hO1Co)
 
-
 Contributors:
 - [Halcy0nic](https://twitter.com/Halcy0nic)
 - [mlaertean](https://twitter.com/mlaertean)
@@ -59,18 +58,33 @@ That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" wi
 We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect Cable](#lpc-link2-setup) and one using a [Black Magic Probe + Tag-Connect Cable](#black-magic-probe-setup). Depending on your available hardware/software please reference the appropriate section.
 
 ### LPC-Link2 Setup
-1. Install the MCUXpresso IDE on a Windows Machine
-2. Install the SDK by dragging and dropping the SDK Zip file into the MCUXpresso IDE
---- TODO:: Picture of the SDK inside the MCUXpresso IDE
-3. Clone the Jackp0t repo
-    $ git clone https://github.com/NickEngmann/Jackp0t.git
-4. Copy the Jackp0t/dc27_badge folder into the MCUXpresso IDE
---- TODO:: Add Image of IDE
-5. Attach the Tag-Connect Cable to the DEFCON27 Badge
---- Add Image of Tag-Connect Touching DEFCON27 Badge
-6. Click on the Flash Button
---- TODO:: Image of Flash Button
+1. Install the [MCUXpresso IDE]((https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)) on a Windows Machine
 
+2. Install the [SDK](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/SDK_2.4.1_FRDM-KL27Z.zip) by dragging and dropping the SDK Zip file into the MCUXpresso IDE
+
+    <img src="./imgs/sdk.png" data-canonical-src="./imgs/sdk.png" width="600"/>
+
+3. Clone the Jackp0t repo
+
+```
+    $ git clone https://github.com/NickEngmann/Jackp0t.git
+```
+
+4. Copy/Import the Jackp0t/dc27_badge folder into the MCUXpresso IDE
+
+    <img src="./imgs/ide.png" data-canonical-src="./imgs/ide.png" width="600"/>
+
+5. Plug the Tag-Connect Cable into the LPC-Link2
+
+    <img src="./imgs/tagconnect-lpc.png" data-canonical-src="./imgs/tagconnect-lpc.png" width="400"/>
+
+5. Attach the Tag-Connect Cable to the DEFCON27 Badge
+
+    <img src="./imgs/attach-tagconnect.png" data-canonical-src="./imgs/attach-tagconnect.png" width="300"/>
+
+6. Click on the Flash Button to Flash the Board
+
+    <img src="./imgs/flash.png" data-canonical-src="./imgs/flash.png" width="300"/>
 
 ### Black Magic Probe Setup
 0. [Download the jackp0t.bin binary](https://github.com/NickEngmann/Jackp0t/releases/download/0.9/jackp0t.bin)
@@ -132,7 +146,9 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
     ```
 
 # Future Applications
---- TODO::
+Figuring out how to edit the source code and successfully flash these badges opens the door to tons of different future hacks. Feel free to use these instructions as a jumping point to create complex hacks like turning the badge into a custom clock!
+
+<img src="./imgs/watch.png" data-canonical-src="./imgs/watch.png" width="300"/>
 
 # Credits
 - [DEFCON Badge Hacking Thread - Reddit](https://www.reddit.com/r/Defcon/comments/cnn2x7/dc_27_badge_hacking_thread/)
