@@ -99,7 +99,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
     > ```
     > sudo dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D src/blackmagic.bin
     > ```
-
+    >  -- <cite>Ross Schlaiker</cite>
 
 4. Open up the arm toolchain.
 
@@ -134,6 +134,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
         2      Kinetis Recovery (MDM-AP)
     ```
     > If your scan doesn’t return KL27x64 M0+, and instead returns ‘Generic Cortex-M’, close GDB and retry. This seems to be a race condition of some sort.
+    >  -- <cite>Ross Schlaiker</cite>
 8. Attach to the KL27 Microcontroller.
     ```
     $ (gdb) attach 1
