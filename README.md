@@ -58,31 +58,31 @@ That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" (o
 We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect Cable](#lpc-link2-setup) and one using a [Black Magic Probe + Tag-Connect Cable](#black-magic-probe-setup). Depending on your available hardware/software please reference the appropriate section.
 
 ### LPC-Link2 Setup
-1. Install the [MCUXpresso IDE]((https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)) on a Windows Machine
+1. Install the [MCUXpresso IDE]((https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)) on a Windows Machine.
 
-2. Install the [SDK](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/SDK_2.4.1_FRDM-KL27Z.zip) by dragging and dropping the SDK Zip file into the MCUXpresso IDE
+2. Install the [SDK](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/SDK_2.4.1_FRDM-KL27Z.zip) by dragging and dropping the SDK Zip file into the MCUXpresso IDE.
 
     <img src="./imgs/sdk.png" data-canonical-src="./imgs/sdk.png" width="600"/>
 
-3. Clone the Jackp0t repo
+3. Clone the Jackp0t repo.
 
 ```
     $ git clone https://github.com/NickEngmann/Jackp0t.git
 ```
 
-4. Copy/Import the Jackp0t/dc27_badge folder into the MCUXpresso IDE
+4. Copy/Import the Jackp0t/dc27_badge folder into the MCUXpresso IDE.
 
     <img src="./imgs/ide.png" data-canonical-src="./imgs/ide.png" width="600"/>
 
-5. Plug the Tag-Connect Cable into the LPC-Link2
+5. Plug the Tag-Connect Cable into the LPC-Link2.
 
     <img src="./imgs/tagconnect-lpc.png" data-canonical-src="./imgs/tagconnect-lpc.png" width="400"/>
 
-5. Attach the Tag-Connect Cable to the DEFCON27 Badge
+5. Attach the Tag-Connect Cable to the DEFCON27 Badge.
 
     <img src="./imgs/attach-tagconnect.png" data-canonical-src="./imgs/attach-tagconnect.png" width="300"/>
 
-6. Click on the Flash Button to Flash the Board
+6. Click on the Flash Button to Flash the Board.
 
     <img src="./imgs/flash.png" data-canonical-src="./imgs/flash.png" width="600"/>
 
@@ -94,13 +94,13 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 
     We initially ran into a lot of issues with the default firmware on the Black Magic Probe. If you update the firmware using the master branch of the wiki, flashing the device was becomes far more consistent.
 
-4. Open up the arm toolchain
+4. Open up the arm toolchain.
 
     ```
     $ arm-none-eabi-gdb
     ```
 
-5. Connect to the Black Magic Probe Device via GDB
+5. Connect to the Black Magic Probe Device via GDB.
 
     ```
     $ (gdb) target extended-remote <device> 
@@ -114,7 +114,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
     <img src="./imgs/swd.png" data-canonical-src="./imgs/swd.png" width="321"/>
     <img src="./imgs/attach-tagconnect.png" data-canonical-src="./imgs/attach-tagconnect.png" width="300"/>
 
-7.  Use the `monitor swdp scan`  command to connect to the device using the Serial-Wire Debug Protocol .
+7.  Use the `monitor swdp scan`  command to connect to the device using the Serial-Wire Debug Protocol.
     ```
     $ (gdb) monitor swdp scan
     ```
