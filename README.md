@@ -19,7 +19,7 @@ Contributors:
     2. [Black Magic Probe Setup](#black-magic-probe-setup)
 5. [Future Applications](#future-applications)
 6. [Credits](#credits)
-7. [Copyright](#copyright)
+7. [License](#license)
 
 ## The Challenge
 The DEFCON Badge's challenge this year involved an social interactions with an RF Badge. A regular attendee is challenged to find and touch badges with 10 different badge types (including Sponsors, Vendors, Goons, and even Press). This becomes super challenging when you have to find one of the 20 individuals out of a 30,000 person conference with an Black "UBER" badge. An exciting challenge, but for an introvert like myself - it was much easier to wall up and figure out how to flash the DEFCON27 badge to do three things:
