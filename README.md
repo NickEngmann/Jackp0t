@@ -22,7 +22,7 @@ Contributors:
 7. [License](#license)
 
 ## The Challenge
-This year's DEFCON Badge challenge involved social interactions with an RF Badge. A regular attendee is challenged to find and touch badges with 10 different badge types (including Sponsors, Vendors, Goons, and even Press). This becomes super challenging when you have to find one of the 20 individuals out of a 30,000 person conference with an Black "UBER" badge (an exciting but non-trivial task).  It was much easier for us to figure out how to flash the DEFCON27 badge to do three things:
+This year's DEFCON Badge challenge involved social interactions with an RF Badge. A regular attendee is challenged to find and touch badges with 10 different badge types (including Sponsors, Vendors, Goons, and even Press). This becomes super challenging when you have to find one of the 20 individuals out of a 30,000 person conference with a Black "UBER" badge (an exciting but non-trivial task).  It was much easier for us to figure out how to flash the DEFCON27 badge to do three things:
 
 1. Automatically complete the "touch 10 different badge types" challenge
 2. Easily help our fellow attendees by unlocking their badges with one that can act as a chameleon, emulating all other badge types.
