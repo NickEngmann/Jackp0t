@@ -20,25 +20,27 @@ Contributors:
 7. [Copyright](#copyright)
 
 ## The Challenge
---- TODO::
+--- TODO:: Abstract
 
+---  TODO:: Description of Difference between Regular Badge and Jackp0t badge
 
 ## Required Hardware
 
 - [DEFCON27 Badge](https://hackaday.com/2019/08/08/first-look-at-def-con-27-official-badge-kingpin-is-back/)
 - [Tag-Connect TC2050-IDC-NL-050-ALL (normal orientation)](http://www.tag-connect.com/node/199)
-- trim alignment pins if using w/ mounted gemstone • vtref provides 1.8V i/o level to debug probe
-- [NXP LPC-Link2](https://www.nxp.com/design/microcontrollers-developer-resources/lpc-microcontroller-utilities/lpc-link2:OM13054) OR A [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
-- Optional - [Micro 1v8 USB Serial UART](http://jim.sh/1v8/) OR [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
+    - trim alignment pins if using w/ mounted gemstone • vtref provides 1.8V i/o level to debug probe
+- [NXP LPC-Link2](https://www.nxp.com/design/microcontrollers-developer-resources/lpc-microcontroller-utilities/lpc-link2:OM13054) OR a [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
+    - These devices in conjunction with the Tag-Connect will allow you to interface with the JTAG/SWD interface on the DEFCON Badge.
+- (Optional) [Micro 1v8 USB Serial UART](http://jim.sh/1v8/) OR [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
+    - Having UART access to the badge is super useful for debugging issues/reading badge state.
 
 ## Required Software
-
-Windows Host with USB 2.0 Ports for MCUXpresso OR Windows/OSX/Linux for GDP Black Magic Probe
-
 - [nxp MCUXpresso IDE 10.2.1](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)
+    - an IDE developed by NXP to use with the LPC-Link2. If you are flashing using the Black Magic Probe you won't need this.
 - [FRDM-KL27Z SDK 2.4.1](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/SDK_2.4.1_FRDM-KL27Z.zip)
-- [GDP]()
---- TODO:: Link to GDP
+    - the SDK for interacting with the MKL27Z64VDA4 microcontroller with the MCUXpresso IDE.
+- [GDB](https://www.gnu.org/software/gdb/download/)
+    - Powerful GNU Project Debugger. Used to interact with the Black Magic Probe to flash images
 
 ## Flashing
 Clone this repo, take the binary and load it into MCUXpresso
