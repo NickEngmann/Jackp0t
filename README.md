@@ -92,7 +92,14 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 2. Plug in the Black Magic Probe into your computer via USB.
 3. [Update the firmware on the Black Magic Probe.](https://github.com/blacksphere/blackmagic/wiki/Upgrading-Firmware)
 
-    We initially ran into a lot of issues with the default firmware on the Black Magic Probe. If you update the firmware using the master branch of the wiki, flashing the device was becomes far more consistent.
+    We initially ran into a lot of issues with the default firmware on the Black Magic Probe. If you update the firmware using the master branch of the wiki, flashing the device was becomes far more consistent. Check out [Ross' instructions](https://rhye.org/post/defcon-27-badge-writeup/) on how to upgrade the firmware on the Black Magic Probe:
+
+    >To update your black magic probe, clone the firmware repo from Github build it with make and then perform a DFU update on your probe with the following command:
+
+    > ```
+    > sudo dfu-util -d 1d50:6018,:6017 -s 0x08002000:leave -D src/blackmagic.bin
+    > ```
+
 
 4. Open up the arm toolchain.
 
@@ -123,10 +130,10 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
         Target voltage: 1.8V
         Available Targets:
         No. Att Driver
-        1      KL27
+        1      KL27x64 M0+
         2      Kinetis Recovery (MDM-AP)
     ```
-
+    > If your scan doesn’t return KL27x64 M0+, and instead returns ‘Generic Cortex-M’, close GDB and retry. This seems to be a race condition of some sort.
 8. Attach to the KL27 Microcontroller.
     ```
     $ (gdb) attach 1
@@ -152,7 +159,7 @@ Figuring out how to edit the source code and successfully flash these badges ope
 
 # Credits
 - [DEFCON Badge Hacking Thread - Reddit](https://www.reddit.com/r/Defcon/comments/cnn2x7/dc_27_badge_hacking_thread/)
-- [Ross Schlaikjer](https://rhye.org/)
+- [Ross Schlaikjer](https://rhye.org/post/defcon-27-badge-writeup/)
 - [The Kingpin, Joe Grand](https://twitter.com/joegrand)
 
 # License
