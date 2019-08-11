@@ -1,48 +1,51 @@
 # Jackp0t
 Modifies your DEFCON27 Badge into a Jackp0t badge to force regular attendees into a rickroll mode
 
---- TODO::
+-- TODO: Video
+
 Contributors:
-- [](Josiah's Twitter)
-- [](Nick's Twitter)
-- [](GP's Twitter)
+- [Halcy0nic](https://twitter.com/Halcy0nic)
+- [mlaertean](https://twitter.com/mlaertean)
+- [Nick Engmann](https://twitter.com/NickySlicksHaha)
 
+# Table of Contents
+1. [The Challenge](#the-challenge)
+2. [Required Hardware](#required-hardware)
+3. [Required Software](#required-software)
+4. [Flashing](#flashing)
+    1. [LPC-Link2 Setup](#lpc-link2-setup)
+    2. [Black Magic Probe Setup](#black-magic-probe-setup)
+5. [Future Ideas & Uses]()
+6. [Credits](#credits)
+7. [Copyright](#copyright)
 
-## Table of Contents
+## The Challenge
 --- TODO::
 
-### TLDR/ABSTRACT/The Challenge Was:
---- TODO::
 
-## Instructions
-Go ahead and do the damn thing. Clone this repo, take the binary and load it into MCUXpresso
---- TODO::
+## Required Hardware
 
-### Development Environment
-Windows Host with USB 2.0 Ports for MCUXpresso OR Windows/OSX/Linux for GDP Black Magic Probe
-
-#### Hardware
-
-- DEFCON27 Badge
-- [Micro 1v8 USB Serial UART](http://jim.sh/1v8/)
+- [DEFCON27 Badge](https://hackaday.com/2019/08/08/first-look-at-def-con-27-official-badge-kingpin-is-back/)
 - [Tag-Connect TC2050-IDC-NL-050-ALL (normal orientation)](http://www.tag-connect.com/node/199)
 - trim alignment pins if using w/ mounted gemstone • vtref provides 1.8V i/o level to debug probe
-- [NXP LPC-Link2](https://www.nxp.com/design/microcontrollers-developer-resources/lpc-microcontroller-utilities/lpc-link2:OM13054)
-OR A:
-- [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
+- [NXP LPC-Link2](https://www.nxp.com/design/microcontrollers-developer-resources/lpc-microcontroller-utilities/lpc-link2:OM13054) OR A [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
+- Optional - [Micro 1v8 USB Serial UART](http://jim.sh/1v8/) OR [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe)
 
-#### Software
+## Required Software
+
+Windows Host with USB 2.0 Ports for MCUXpresso OR Windows/OSX/Linux for GDP Black Magic Probe
 
 - [nxp MCUXpresso IDE 10.2.1](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)
 - [FRDM-KL27Z SDK 2.4.1](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/SDK_2.4.1_FRDM-KL27Z.zip)
 - [GDP]()
 --- TODO:: Link to GDP
 
-### Setting up the Hardware
+## Flashing
+Clone this repo, take the binary and load it into MCUXpresso
 
-#### LPC-Link2
+### LPC-Link2 Setup
 
-#### Black Magic Probe
+### Black Magic Probe Setup
     $ (gdb) target extended-remote /dev/cu.usbmodem <some ##>
 
     $ (gdb) monitor swdp scan
@@ -73,11 +76,8 @@ Load failed
 
 # Credits
 - [DEFCON Badge Hacking Thread - Reddit](https://www.reddit.com/r/Defcon/comments/cnn2x7/dc_27_badge_hacking_thread/)
-- [Ross Last Name here](Link to Ross's Personal Website Blog)
-- [Name of the Guy WHo Designed the Board]()
+- [Ross Schlaikjer](https://rhye.org/)
+- [The Kingpin, Joe Grand](https://twitter.com/joegrand)
 
-### Privacy Policy
-TODO:::
-
-### Copyright Policy
+# Copyright
 TODO:::
