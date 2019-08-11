@@ -1,5 +1,5 @@
 # Jackp0t
-Modifies your DEFCON27 Badge into a Jackp0t badge to force regular attendees into a rickroll mode
+Modifies your DEFCON27 Badge into a Jackp0t badge to force regular attendees to listen to a Rick Roll.
 
 -- TODO: Video
 
@@ -15,14 +15,19 @@ Contributors:
 4. [Flashing](#flashing)
     1. [LPC-Link2 Setup](#lpc-link2-setup)
     2. [Black Magic Probe Setup](#black-magic-probe-setup)
-5. [Future Ideas & Uses]()
+5. [Future Applications](#future-applications)
 6. [Credits](#credits)
 7. [Copyright](#copyright)
 
 ## The Challenge
---- TODO:: Abstract
+The DEFCON Badge's challenge this year involved an social interactions with an RF Badge. If you are a regular attendee you are challenged to find and touch badges with 10 different badge types (including Sponsors,Vendors, Press, Goons, and even UBER). An exciting challenge, but for an introvert like myself - it was much easier to wall up and figure out how to flash the DEFCON27 badge to do three things:
 
----  TODO:: Description of Difference between Regular Badge and Jackp0t badge
+1. Automatically complete the "find 10 different badge types" challenge
+2. Easily help our fellow nerds by unlocking their badges by having a badge that can act as a chamelion that can emulate all other badge types.
+
+That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" win state on boot and over the course of a matter of seconds can emulate all the different badge types to unlock other attendees badges.
+
+[Check out our demo video]()
 
 ## Required Hardware
 
@@ -75,6 +80,9 @@ Reading symbols from dc27_badge-8-9-2019-0.axf...done.
 
 Loading section .text, size 0xc954 lma 0x0
 Load failed
+
+# Future Applications
+--- TODO::
 
 # Credits
 - [DEFCON Badge Hacking Thread - Reddit](https://www.reddit.com/r/Defcon/comments/cnn2x7/dc_27_badge_hacking_thread/)
