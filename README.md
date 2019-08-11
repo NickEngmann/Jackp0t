@@ -84,7 +84,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 
 6. Click on the Flash Button to Flash the Board
 
-    <img src="./imgs/flash.png" data-canonical-src="./imgs/flash.png" width="300"/>
+    <img src="./imgs/flash.png" data-canonical-src="./imgs/flash.png" width="600"/>
 
 ### Black Magic Probe Setup
 0. [Download the jackp0t.bin binary](https://github.com/NickEngmann/Jackp0t/releases/download/0.9/jackp0t.bin)
