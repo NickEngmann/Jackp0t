@@ -75,7 +75,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 ### Black Magic Probe Setup
 0. [Download the jackp0t.bin binary](https://github.com/NickEngmann/Jackp0t/releases/download/0.9/jackp0t.bin)
 1. Install [GDB](https://www.gnu.org/software/gdb/download/)
-2. Plug in the Black Magic Probe into your computer
+2. Plug in the Black Magic Probe into your computer via USB.
 3. [Update the firmware on the Black Magic Probe.](https://github.com/blacksphere/blackmagic/wiki/Upgrading-Firmware)
 
     We ran into a lot if issues with the default firmware on the Black Magic Probe. But if you update the firmware using the master branch of the wikia flashing the device was far more consistent.
@@ -86,7 +86,8 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
     $ arm-none-eabi-gdb
     ```
 
-5. Connect to the Black Magic Probe Device
+5. Connect to the Black Magic Probe Device via GDB
+
     ```
     $ (gdb) target extended-remote <device> 
     ```
@@ -94,7 +95,12 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 
     On Linux <device> is /dev/ttyUSB0
 
-6.  Use the monitor swdp_scan  command to connect to the device using the Serial-Wire Debug Protocol .
+6.  Touch the Black Magic Probe + Tag-Connect to the SWD pins on the badge.
+
+    <img src="./imgs/swd.png" data-canonical-src="./imgs/swd.png" width="321"/>
+    <img src="./imgs/attach-tagconnect.png" data-canonical-src="./imgs/attach-tagconnect.png" width="300"/>
+
+7.  Use the `monitor swdp scan`  command to connect to the device using the Serial-Wire Debug Protocol .
     ```
     $ (gdb) monitor swdp scan
     ```
@@ -106,20 +112,21 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
         1      KL27
         2      Kinetis Recovery (MDM-AP)
     ```
-7. Attach to the KL27 Microcontroller
+
+8. Attach to the KL27 Microcontroller
     ```
     $ (gdb) attach 1
     ```
 
-8. Allow GDB to allow access to memory outside of the devices known memory map. This is useful to allow access to memory mapped IO from GDB.
+9. Allow GDB to allow access to memory outside of the devices known memory map. This is useful to allow access to memory mapped IO from GDB.
     ```
     $ (gdb) set mem inaccessible-by-default off
     ```
-9. Set the binary file. Make sure the binary is in the current directory
+10. Set the binary file. Make sure the binary is in the current directory
     ```
     $ (gdb) file jackp0t.bin
     ```
-10. Load the binary onto the board
+11. Load the binary onto the board
     ```
     $ (gdb) load
     ```
