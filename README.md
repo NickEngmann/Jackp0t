@@ -28,7 +28,7 @@ This year's DEFCON Badge challenge involved social interactions with an RF Badge
 2. Easily help our fellow attendees by unlocking their badges with one that can act as a chameleon, emulating all other badge types.
 3. Profit ???
 
-That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" (or win) state on boot and emulates all the different badge types to complete other attendees badges in a matter of seconds. 
+That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" (or win) state on boot and emulates all the different badge types to complete other attendee's badges in a matter of seconds. 
 
 [Check out our demo video](https://youtu.be/2Dge06hO1Co)
 
@@ -92,7 +92,7 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
 2. Plug in the Black Magic Probe into your computer via USB.
 3. [Update the firmware on the Black Magic Probe.](https://github.com/blacksphere/blackmagic/wiki/Upgrading-Firmware)
 
-    We ran into a lot if issues with the default firmware on the Black Magic Probe. But if you update the firmware using the master branch of the wikia flashing the device was far more consistent.
+    We initially ran into a lot of issues with the default firmware on the Black Magic Probe. If you update the firmware using the master branch of the wiki, flashing the device was becomes far more consistent.
 
 4. Open up the arm toolchain
 
@@ -127,20 +127,20 @@ We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect
         2      Kinetis Recovery (MDM-AP)
     ```
 
-8. Attach to the KL27 Microcontroller
+8. Attach to the KL27 Microcontroller.
     ```
     $ (gdb) attach 1
     ```
 
-9. Allow GDB to allow access to memory outside of the devices known memory map. This is useful to allow access to memory mapped IO from GDB.
+9. Allow GDB to allow access to memory outside of the device's known memory map. This is useful to allow access to memory mapped IO from GDB.
     ```
     $ (gdb) set mem inaccessible-by-default off
     ```
-10. Set the binary file. Make sure the binary is in the current directory
+10. Set the binary file. Make sure the binary is in the current directory.
     ```
     $ (gdb) file jackp0t.bin
     ```
-11. Load the binary onto the board
+11. Load the binary onto the board.
     ```
     $ (gdb) load
     ```
