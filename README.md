@@ -6,9 +6,9 @@ Click the image below to watch the video.
 [<img src="./imgs/Jackp0t.png" data-canonical-src="./imgs/Jackp0t.png" width="600"/>](https://youtu.be/yLcS24CV8U8)
 
 Contributors:
-- [Halcy0nic](https://twitter.com/Halcy0nic)
-- [mlaerten](https://twitter.com/mlaerten)
-- [Nick Engmann](https://twitter.com/NickySlicksHaha)
+- [Josiah Bryan]()
+- [Geancarlo Palavicini Jr]()
+- [Nick Engmann]()
 
 # Table of Contents
 1. [The Challenge](#the-challenge)
@@ -20,6 +20,7 @@ Contributors:
 5. [Future Applications](#future-applications)
 6. [Credits](#credits)
 7. [License](#license)
+8. [Publicity](#publicity)
 
 ## The Challenge
 This year's DEFCON Badge challenge involved social interactions with an RF Badge. A regular attendee is challenged to find and touch badges with 10 different badge types (including Sponsors, Vendors, Goons, and even Press). This becomes super challenging when you have to find one of the 20 individuals out of a 30,000 person conference with a Black "UBER" badge (an exciting but non-trivial task).  It was much easier for us to figure out how to flash the DEFCON27 badge to do three things:
@@ -55,7 +56,7 @@ That's what the Jackp0t badge does. It automatically puts you in a "COMPLETE" (o
     - Powerful GNU Project Debugger. Used to interact with the Black Magic Probe to flash images
 
 ## Flashing
-We confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect Cable](#lpc-link2-setup) and one using a [Black Magic Probe + Tag-Connect Cable](#black-magic-probe-setup). Depending on your available hardware/software please reference the appropriate section.
+In order to debug or flash your device, you’ll need one of the many ARM programmers available. We've confirmed two different ways to flash. One using the [LPC-Link2 + Tag-Connect Cable](#lpc-link2-setup) and one using a [Black Magic Probe + Tag-Connect Cable](#black-magic-probe-setup). Depending on your available hardware/software please reference the appropriate section. 
 
 ### LPC-Link2 Setup
 1. Install the [MCUXpresso IDE]((https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20badge/Development%20Environment/MCUXpressoIDE_10.2.1_795.exe)) on a Windows Machine.
@@ -166,3 +167,10 @@ Figuring out how to edit the source code and successfully flash these badges ope
 # License
 
 This project is [MIT licensed](./LICENSE.md).
+
+# Publicity
+- [Joe Grand, Creator of the Badge Retweet](https://twitter.com/NickySlicksHaha/status/1160556249055813634)
+- [Reddit Community Embracing](https://www.reddit.com/r/Defcon/comments/coyhlf/jackp0t_a_chameleon_badge_to_autocomplete_the/)
+- [Stars on Repository](https://github.com/NickENgmann/Jackp0t)
+- [More Shoutouts By Joe Grand](https://twitter.com/joegrand/status/1160847325373161472)
+- [Halcy0nic's Tweet](https://twitter.com/Halcy0nic/status/1160441505791660033)
