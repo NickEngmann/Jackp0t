@@ -6,9 +6,9 @@ Click the image below to watch the video.
 [<img src="./imgs/Jackp0t.png" data-canonical-src="./imgs/Jackp0t.png" width="600"/>](https://youtu.be/yLcS24CV8U8)
 
 Contributors:
-- [Josiah Bryan]()
-- [Geancarlo Palavicini Jr]()
-- [Nick Engmann]()
+- [Halcy0nic](https://twitter.com/Halcy0nic)
+- [mlaerten](https://twitter.com/mlaerten)
+- [Nick Engmann](https://twitter.com/NickySlicksHaha)
 
 # Table of Contents
 1. [The Challenge](#the-challenge)
