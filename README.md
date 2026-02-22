@@ -1,4 +1,6 @@
 # Jackp0t
+
+![Tests](https://github.com/NickEngmann/Jackp0t/actions/workflows/test.yml/badge.svg)
 Modifies your DEFCON27 Badge into a Jackp0t badge that will complete other attendee's badge challenge/trigger rick roll when held within a few inches of each other.
 
 Click the image below to watch the video.
@@ -174,3 +176,9 @@ This project is [MIT licensed](./LICENSE.md).
 - [Stars on Repository](https://github.com/NickENgmann/Jackp0t)
 - [More Shoutouts By Joe Grand](https://twitter.com/joegrand/status/1160847325373161472)
 - [Halcy0nic's Tweet](https://twitter.com/Halcy0nic/status/1160441505791660033)
+
+## Running Tests
+
+```bash
+None
+```
